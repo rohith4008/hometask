@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Blog</title>
+</head>
+<style>
+    .main-heading{
+    background-color: blue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 25%;
+}
+.white-back{
+    width: 35%;
+    background-color: aliceblue;
+    margin: 15px;
+    border: orange 1px;
+}
+form input[type='submit']{
+    background-color: black;
+    color: azure;
+}
+.sub-main{
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    height: 50%;
+    padding: 2%;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+
+}
+.articles{
+    display: flex;
+    flex-direction: column;
+}
+.articles div{
+    margin: 1%;
+}
+img{
+    padding-top: 20%;
+    padding-bottom: 10%; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.blog{
+    display: flex;
+    border-bottom: 1px solid black;
+}
+.btn button{
+    margin: 2%;
+    padding: 1%;
+    background-color: orange;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .blog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .white-back{
+        width: 75%;
+        background-color: aliceblue;
+        margin: 15px;
+        border: orange 1px;
+    }
+    .sub-main{
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        height: 50%;
+        padding: 2%;
+        justify-content: space-evenly;
+        border-bottom: 1px solid black;
+    }
+    .sub-main h1{
+       padding-left: 25%;
+    }
+}
+</style>
+<body>
+    <div class="main-heading">
+        <div class="white-back">
+            <h1>News Blog</h1>
+            <p>World Wide news</p>
+        </div>
+    </div>
+    <div class="sub-main">
+        <div class="">
+            <label for="category">SELECT CATEGORY</label>
+            <br>
+            <select name="category" id="category">
+                <option value="all">All</option>
+                <option value="all">Some</option>
+                <option value="all">Nothing</option>
+            </select>
+        </div>
+        <div>
+            <h1>ALL NEWS</h1>
+        </div>
+        <div>
+            <form action="/action/sub" method="post">
+                <label for="sub">SUBSCRIBE</label>
+                <br>
+                <input type="text" name="sub-mail" id="sub-mail">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </div>
+    <div class="articles">
+        <div class="blog one">
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/1303053462/photo/abstract-background-with-smooth-waves-in-shades-of-black.jpg?s=612x612&w=0&k=20&c=YxxiBpxWyKWFQisYaGKnmn7M4H7cen1c9WVEO3nqPc8=" alt="blog-img">
+            </div>
+            <div>
+                <div class="heading">
+                    <h3>Blog One</h3>
+                    <p>posted on 29 june,29 //Category , Category One</p>
+                </div>
+                <div class="desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus est maiores laudantium non tenetur dolor cum quis tempora laboriosam itaque, ad veniam? Consequuntur adipisci voluptates eligendi accusantium facilis alias dolore officia. Accusantium ea at officiis inventore veritatis quisquam molestiae facilis ipsam commodi voluptatibus aliquid, fugit repellendus ducimus, sint dicta eius.
+                </div>
+                <div class="btn">
+                    <button>Continue Reading</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="blog one">
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/1303053462/photo/abstract-background-with-smooth-waves-in-shades-of-black.jpg?s=612x612&w=0&k=20&c=YxxiBpxWyKWFQisYaGKnmn7M4H7cen1c9WVEO3nqPc8=" alt="blog-img">
+            </div>
+            <div>
+                <div class="heading">
+                    <h3>Blog One</h3>
+                    <p>posted on 29 june,29 //Category , Category One</p>
+                </div>
+                <div class="desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus est maiores laudantium non tenetur dolor cum quis tempora laboriosam itaque, ad veniam? Consequuntur adipisci voluptates eligendi accusantium facilis alias dolore officia. Accusantium ea at officiis inventore veritatis quisquam molestiae facilis ipsam commodi voluptatibus aliquid, fugit repellendus ducimus, sint dicta eius.
+                </div>
+                <div class="btn">
+                    <button>Continue Reading</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="blog one">
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/1303053462/photo/abstract-background-with-smooth-waves-in-shades-of-black.jpg?s=612x612&w=0&k=20&c=YxxiBpxWyKWFQisYaGKnmn7M4H7cen1c9WVEO3nqPc8=" alt="blog-img">
+            </div>
+            <div>
+                <div class="heading">
+                    <h3>Blog One</h3>
+                    <p>posted on 29 june,29 //Category , Category One</p>
+                </div>
+                <div class="desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus est maiores laudantium non tenetur dolor cum quis tempora laboriosam itaque, ad veniam? Consequuntur adipisci voluptates eligendi accusantium facilis alias dolore officia. Accusantium ea at officiis inventore veritatis quisquam molestiae facilis ipsam commodi voluptatibus aliquid, fugit repellendus ducimus, sint dicta eius.
+                </div>
+                <div class="btn">
+                    <button>Continue Reading</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
